@@ -5,8 +5,12 @@ const Todo = ({ todo, onEdit, onDelete, onComplete }) => {
         {todo.text}
       </div>
       <div>
-        <button onClick={onEdit}>Edit</button>
-        <button onClick={onDelete}>Delete </button>
+        <button onClick={onEdit} className="btn">
+          Edit
+        </button>
+        <button onClick={onDelete} className="btn remove">
+          Delete{" "}
+        </button>
       </div>
     </div>
   );
